@@ -1,0 +1,162 @@
+/* ///////////////////////////////////////// */
+/* small hero */
+/* ///////////////////////////////////////// */
+.small-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: -7rem;
+  height: 50vh;
+  display: grid;
+  align-items: center;
+}
+.small-hero-background {
+  height: 50vh;
+  width: 100vw;
+  background-color: white;
+  background-image: url("../images/kitchen3.jpg");
+  background-size: cover;
+  background-blend-mode: luminosity;
+  background-position: bottom;
+  opacity: 0.1;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.small-hero-heading {
+  font-size: 6rem;
+  color: var(--color-primary);
+  max-width: max-content;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media (orientation: portrait) {
+  .small-hero {
+    height: 40vh;
+    margin-top: 0rem;
+  }
+  .small-hero-background {
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .small-hero-heading {
+    font-size: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+/* ///////////////////////////////////////// */
+/* inspector process section */
+/* ///////////////////////////////////////// */
+.inspector-process {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+.inspector-process-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.steps-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.step-card {
+  width: 25rem;
+  margin: 3rem;
+}
+.step-svg {
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  margin: 0 auto;
+}
+.step-number {
+  font-size: 2rem;
+  color: var(--color-secondary);
+  margin: 2rem 0rem;
+}
+.step-text {
+  font-size: 1.6rem;
+}
+.inspector-process-cta {
+  background-color: var(--color-secondary);
+  color: #fff;
+  width: max-content;
+  padding: 1rem 2.5rem;
+  font-size: 2rem;
+  border: 2px solid var(--color-secondary);
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  transition: color 0.2s;
+}
+.inspector-process-cta:hover {
+  cursor: pointer;
+  color: var(--color-secondary);
+  background-color: transparent;
+}
+.inspector-process-cta a {
+  color: #fff;
+  transition: color 0.2s;
+}
+.inspector-process-cta:hover a {
+  color: var(--color-secondary);
+}
+@media only screen and (max-width: 750px) {
+  .steps-grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .steps-grid-container {
+    grid-template-columns: 1fr;
+  }
+  .step-card {
+    width: 80%;
+  }
+}
+/* ///////////////////////////////////////// */
+/* affiliations section */
+/* ///////////////////////////////////////// */
+.affiliations {
+  height: max-content;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.affiliations-logo {
+  height: 10rem;
+  margin: 3rem;
+}
+.affiliations-flex-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 700px) {
+  .affiliations {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .affiliations h2 {
+    margin-bottom: 3rem;
+  }
+  .affiliations-flex-row {
+    margin-top: 0rem;
+  }
+  .affiliations-logo {
+    margin: 2rem;
+  }
+}
