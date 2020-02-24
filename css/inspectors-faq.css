@@ -1,0 +1,131 @@
+.small-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: -7rem;
+  /* height: calc(50vh - 7rem); */
+  height: 50vh;
+  display: grid;
+  align-items: center;
+}
+.small-hero-background {
+  height: 50vh;
+  width: 100vw;
+  background-color: white;
+  background-image: url("../images/kitchen3.jpg");
+  background-size: cover;
+  background-blend-mode: luminosity;
+  background-position: bottom;
+  opacity: 0.1;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.small-hero-heading {
+  font-size: 6rem;
+  color: var(--color-primary);
+  max-width: max-content;
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media (orientation: portrait) {
+  .small-hero {
+    height: 40vh;
+    margin-top: 0rem;
+  }
+  .small-hero-background {
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .small-hero-heading {
+    font-size: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+/* ///////////////////////////////////////// */
+/* faq body */
+/* ///////////////////////////////////////// */
+.faq-body {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 8rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.faq-question {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+.faq-answer {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-bottom: 5rem;
+}
+.faq-link,
+.faq-link:link,
+.faq-link:visited {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+.faq-link:hover,
+.faq-link:link:hover,
+.faq-link:visited:hover {
+  text-decoration: underline;
+}
+@media (orientation: portrait) {
+  .faq-body {
+    margin-top: 10rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .faq-body {
+    margin-top: 7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+/* ///////////////////////////////////////// */
+/* affiliations section */
+/* ///////////////////////////////////////// */
+.affiliations {
+  height: max-content;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.affiliations-logo {
+  height: 10rem;
+  margin: 3rem;
+}
+.affiliations-flex-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 700px) {
+  .affiliations {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .affiliations h2 {
+    margin-bottom: 3rem;
+  }
+  .affiliations-flex-row {
+    margin-top: 0rem;
+  }
+  .affiliations-logo {
+    margin: 2rem;
+  }
+}
+

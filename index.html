@@ -11,18 +11,35 @@
 <body>
   
     <header class="header">
-      <img class="logo" src="./images/recallcheklogo12.png" alt="RecallChek Logo">
+      <a href="/index.html"><img class="logo" src="./images/recallcheklogo12.png" alt="RecallChek Logo"></a>
       <nav class="navbar">
         <ul class="navbar__ul">
           <li class="navbar__li"><a class="navbar__a" href="#">Our Services</a></li>
           <li class="navbar__li"><a class="navbar__a" href="/inspectors.html">Home Inspectors</a></li>
-          <li class="navbar__li"><a class="navbar__a" href="#">Real Estate Agents</a></li>
+          <li class="navbar__li"><a class="navbar__a" href="/real-estate-agents.html">Real Estate Agents</a></li>
           <li class="navbar__li"><a class="navbar__a" href="#">Consumers</a></li>
           <li class="navbar__li"><a class="navbar__a" href="#">Independent Dealers</a></li>
         </ul>
       </nav>
-      
     </header>
+
+    <div class="mobile-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
+      <div class="side-drawer">
+        <div class="side-drawer-content">
+          <img class="side-drawer-logo" src="/svg/logo.svg" alt="Recall Chek logo"/>
+          <ul class="side-drawer-ul">
+            <li><a class="side-drawer-a" href="#">Our Services</a></li>
+            <li><a class="side-drawer-a" href="#">Home Inspectors</a></li>
+            <li><a class="side-drawer-a" href="#">Real Estate Agents</a></li>
+            <li><a class="side-drawer-a" href="#">Homeowners</a></li>
+            <li><a class="side-drawer-a" href="#">Appliance Repair Technicians</a></li>
+            <li><a class="side-drawer-a" href="#">Independent Dealers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <section class="hero">
       
@@ -36,7 +53,7 @@
         </div>
         <div class="hero__right">
           <div class="hero__right-content-container">
-            <img src="/svg/check.svg" alt="checkmark" height="400pt" width="400pt" fill="var(--color-primary)">
+            <img class="hero-checkmark" src="/svg/check.svg" alt="checkmark" fill="var(--color-primary)">
           </div>
         </div>
       </div>
@@ -72,19 +89,19 @@
       <h2 class="links-heading">What's your <span class="green-text">business?</span></h2>
       <div class="links-grid-row--one">
         <div class="links-card">
-          <img src="/svg/inspect.svg" alt="Magnifying glass" height="70" width="70">
+          <img class="links-svg" src="/svg/inspect.svg" alt="Magnifying glass" />
           <h4 class="links-card__heading">Home Inspector</h4>
           <p class="links-card__text">Join the more than 3600 home inspectors who provide a lifetime membership to recall reporting and protection for their clients!</p>
           <button class="links-cta"><a href="#">Inspectors</a></button>
         </div>
         <div class="links-card">
-          <img src="/svg/real-estate.svg" alt="House" height="70" width="70">
+          <img class="links-svg" src="/svg/real-estate.svg" alt="House" />
           <h4 class="links-card__heading">Real Estate Agent</h4>
           <p class="links-card__text">Be confident that all recalls will be found and that repairs will be provided free to your clients by the manufacturer.</p>
           <button class="links-cta"><a href="#">Agents</a></button>
         </div>
         <div class="links-card">
-          <img src="/svg/homeowner.svg" alt="Family portrait" height="70" width="70">
+          <img class="links-svg" src="/svg/homeowner.svg" alt="Family portrait" />
           <h4 class="links-card__heading">Homeowner</h4>
           <p class="links-card__text">Inventory your appliances in our databases and get recall alerts for the rest of your life!</p>
           <button class="links-cta"><a href="#">Homeowners</a></button>
@@ -92,13 +109,13 @@
       </div>
       <div class="links-grid-row--two">
         <div class="links-card">
-          <img src="/svg/appliance.svg" alt="Washing machine" height="70" width="70">
+          <img class="links-svg" src="/svg/appliance.svg" alt="Washing machine" />
           <h4 class="links-card__heading">Appliance Repair</h4>
-          <p class="links-card__text">See if it's been recalled. Call us for a free Recall Check report!</p>
+          <p class="links-card__text">See if it's been recalled. Call us for a free Recall Chek report!</p>
           <button class="links-cta"><a href="#">Technicians</a></button>
         </div>
         <div class="links-card">
-          <img src="/svg/sale.svg" alt="Hand holding percent sign bubble" height="70" width="70">
+          <img class="links-svg" src="/svg/sale.svg" alt="Hand holding percent sign bubble" />
           <h4 class="links-card__heading">Become a Seller</h4>
           <p class="links-card__text">Call us to apply to be an authorized independent dealer of Recall Chek!</p>
           <button class="links-cta"><a href="#">Partners</a></button>
@@ -108,7 +125,7 @@
     </section>
 
     <section class="story">
-      <img class="story-image" src="/images/rules.jpg" alt="Know the rules written on chalkboard">
+      <img class="story-image" src="/images/rules.jpg" alt="Know the rules written on chalkboard"/>
       <div class="story-content">
         <h2 class="story-heading">The Story of Recall <span class="green-text">Chek</span></h2>
         <p class="story-text">
@@ -123,9 +140,6 @@
     <footer class="footer">
       <div class="footer-top-content">
         <div class="column-contact">
-          <!-- <div class="new-logo">
-            <p>Recall<span class="green-text">Check</span>&nbsp;</p> <span><svg height="45pt" viewBox="0 -77 511.98121 511" width="45pt" fill="var(--color-primary)" xmlns="http://www.w3.org/2000/svg"><path d="m382.417969 14.753906-149.507813 158.152344-46.851562 49.566406s-.007813 0-.007813.007813c-1.765625 1.871093-4.171875 3.214843-6.800781 2.933593h-.011719c-.019531 0-.046875 0-.074219 0-2.613281-.019531-5.09375-1.128906-6.851562-3.054687l-110.917969-121.085937-61.394531 61.253906 179.296875 190.183594 112.648437-117.5625 151.980469-158.605469zm0 0"/><path d="m461.589844 85.269531-164.9375 172.128907-95.417969 99.570312h44.660156l260.789063-278.171875zm0 0"/><path d="m80.1875 94 99.144531 108.234375 33.65625-35.601563-79.847656-80.234374zm0 0"/><path d="m402.113281 7.902344 58.265625 58.558594 51.601563-7.414063-58.273438-58.554687zm0 0"/></svg></span>
-          </div> -->
           <h6 class="footer-heading">Give us a call:</h6>
           <p class="phone">1-888-854-0798</p>
           <p class="hours">8am - 5:30pm EST Monday - Friday.</p>
@@ -161,8 +175,8 @@
       <div class="footer-bottom-content">
         <div class="social-icons">
           <a href="#"><img class="social-icon-svg" src="/svg/facebook.svg" alt="Facebook icon"/></a>
-          <a href="#"><img src="/svg/instagram.svg" alt="Instagram icon"/></a>
-          <a href="#"><img src="/svg/youtube.svg" alt="Youtube icon"/></a>
+          <a href="#"><img class="social-icon-svg" src="/svg/instagram.svg" alt="Instagram icon"/></a>
+          <a href="#"><img class="social-icon-svg" src="/svg/youtube.svg" alt="Youtube icon"/></a>
         </div>
         <hr class="footer-hr"/>
         <div class="legal-links">
