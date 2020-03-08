@@ -1,49 +1,39 @@
-/* ///////////////////////////////////////// */
-/* faq body */
-/* ///////////////////////////////////////// */
-.faq-body {
+.testimonials__container {
   max-width: 1100px;
   margin: 0 auto;
   margin-top: 8rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
-.faq-question {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: var(--color-secondary);
-  margin-bottom: 1rem;
+.testimonials__heading {
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
 }
-.faq-answer {
+.testimonial {
+  max-width: 900px;
+  margin: 6rem auto;
+}
+.testimonial__text {
   font-size: 1.6rem;
   line-height: 2.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
+  position: relative;
 }
-.faq-link,
-.faq-link:link,
-.faq-link:visited {
-  text-decoration: none;
-  color: var(--color-secondary);
+.testimonial__text::before {
+  content: url('/svg/quotes-left.svg');
+  position: absolute;
+  top: -3rem;
+  left: -2rem;
+  opacity: .2;
 }
-.faq-link:hover,
-.faq-link:link:hover,
-.faq-link:visited:hover {
-  text-decoration: underline;
+.testimonial__name {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
 }
-@media (orientation: portrait) {
-  .faq-body {
-    margin-top: 10rem;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .faq-body {
-    margin-top: 7rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-  .faq-question {
-    font-size: 2rem;
-  }
+.testimonial__a {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
 }
 /* ///////////////////////////////////////// */
 /* affiliations section */
@@ -83,4 +73,3 @@
     margin: 2rem;
   }
 }
-
