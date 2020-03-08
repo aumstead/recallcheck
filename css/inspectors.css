@@ -23,7 +23,7 @@
   grid-column: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20% 1fr;
+  grid-template-rows: 30% 1fr;
 }
 .hero__left {
   grid-column: 1;
@@ -45,30 +45,33 @@
   font-size: 3rem;
 }
 .hero-cta {
-  background-color: var(--color-primary);
-  color: #fff;
-  width: max-content;
-  padding: 1rem 2.5rem;
+  background-color: var(--color-secondary);
+  /* background-color: transparent; */
+  width: 15rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   font-size: 2rem;
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-secondary);
   margin-top: 2rem;
   transition: color 0.2s;
 }
 .hero-cta:hover {
   cursor: pointer;
-  color: var(--color-primary);
-  background-color: transparent;
+  /* color: var(--color-secondary); */
+  background-color: transparent
+  /* background-color: var(--color-secondary); */
+}
+.hero-cta a {
+  color: var(--color-background);
+  transition: color 0.2s;
+}
+.hero-cta:hover a {
+  color: var(--color-secondary);
+  /* color: white; */
 }
 .hero__right-content-container {
   width: max-content;
   margin: 0 auto;
-}
-.hero-cta a {
-  color: #fff;
-  transition: color 0.2s;
-}
-.hero-cta:hover a {
-  color: var(--color-primary);
 }
 .hero-checkmark {
   height: 40rem;
@@ -77,6 +80,10 @@
 @media only screen and (max-width: 1000px) {
   .hero__grid {
     grid-template-rows: 30% 1fr;
+  }
+  .hero-checkmark {
+    height: 35rem;
+    width: 35rem;
   }
 }
 @media (orientation: portrait) {
@@ -101,7 +108,7 @@
     grid-row: 2;
   }
   .hero__left-content-container {
-    margin-top: 8rem;
+    margin-top: 12rem;
     max-width: 90vw;
   }
   .hero__heading {
@@ -215,7 +222,8 @@
     margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
-    width: max-content;
+    width: fit-content;
+    text-align: center;
   }
   .process__card {
     display: grid;
