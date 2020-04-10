@@ -67,7 +67,7 @@ a:visited {
   font-size: 2rem;
   border: 2px solid var(--color-primary);
   margin-top: 2rem;
-  transition: color 0.2s;
+  transition: all 0.2s;
 }
 .button-cta:hover {
   cursor: pointer;
@@ -80,6 +80,9 @@ a:visited {
 }
 .button-cta:hover a {
   color: var(--color-primary);
+}
+.button-cta:focus {
+  outline: none;
 }
 /* ///////////////////////////////////////// */
 /* navbar */
@@ -499,19 +502,18 @@ video {
   font-size: 2rem;
   border: 2px solid var(--color-primary);
   margin-top: 3rem;
-  transition: color 0.2s;
+  color: #fff;
+  transition: all 0.2s;
 }
 .story-cta:hover {
   cursor: pointer;
   background-color: transparent;
-}
-.story-cta a {
-  color: #fff;
-  transition: color 0.2s;
-}
-.story-cta:hover a {
   color: var(--color-primary);
 }
+.story-cta:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 950px) {
   .story-content {
     padding-top: 5rem;
@@ -577,6 +579,9 @@ video {
 .column-contact {
   margin-right: 5rem;
 }
+.column-links {
+  display: flex;
+}
 .column-about {
   margin-right: 5rem;
 }
@@ -618,6 +623,7 @@ video {
   grid-row: 2;
   grid-column: 3;
   justify-self: center;
+  margin-left: 3rem;
 }
 
 .bottom-row {

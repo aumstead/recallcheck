@@ -31,9 +31,16 @@
   font-size: 1.6rem;
   line-height: 2.5rem;
 }
-.testimonial__a {
+.testimonial__a,
+.testimonial__a:visited {
   font-size: 1.6rem;
   line-height: 2.5rem;
+  color: blue;
+}
+iframe {
+  margin: 0 auto;
+  margin-bottom: 8rem;
+  display: block;
 }
 /* ///////////////////////////////////////// */
 /* affiliations section */

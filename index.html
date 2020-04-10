@@ -7,23 +7,28 @@
   <link rel="stylesheet" href="./css/index.css" />
   <link rel="stylesheet" href="./css/global.css" />
   <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,700&display=swap" rel="stylesheet"></link>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
 </head>
 <body>
     <header class="header">
       
       <nav class="navbar">
         <ul class="navbar__ul">
-          <li class="navbar__li"><a href="/index.html"><img class="logo" src="./images/recallcheklogo12.png" alt="RecallChek Logo"></a></li>
+          <li class="navbar__li"><a href="/index.html"><img class="new-logo" src="./svg/logo.svg" alt="RecallChek Logo"></a></li>
           <li class="navbar__li"><a class="navbar__a" href="/inspectors.html">Home Inspectors</a></li>
-          <li class="navbar__li"><a class="navbar__a" href="/real-estate-agents.html">Realtors</a></li>
-          <li class="navbar__li"><a class="navbar__a" href="#">Homeowners</a></li>
+          <li class="navbar__li"><a class="navbar__a" href="/realtors.html">Realtors</a></li>
+          <li class="navbar__li"><a class="navbar__a" href="/homeowners.html">Homeowners</a></li>
           <li class="navbar__li"><a class="navbar__a" href="#">Authorized Dealers</a></li>
         </ul>
       </nav>
       <div class="actions-flex-container">
         <a class="actions__a actions__flex-item" href="">Sign in</a>
         <a class="actions__a actions__flex-item" href="">Contact Us</a>
-        <button class="actions__btn actions__flex-item"><a class="actions__btn-a" href="">Apply now &#8594;</a></button>
+        <button class="actions__btn actions__flex-item"><a class="actions__btn-a" href="">Sign up &#8594;</a></button>
       </div>
     
     </header>
@@ -40,12 +45,12 @@
           <img class="side-drawer-logo" src="/svg/logo.svg" alt="Recall Chek logo"/>
           <div>
             <button class="side-drawer-login"><a href="#">Login</a></button>
-            <button class="side-drawer-apply"><a href="#">Apply Now &#8594;</a></button>
+            <button class="side-drawer-apply"><a href="#">Sign up &#8594;</a></button>
           </div>
           <ul class="side-drawer-ul">
             <li><a class="side-drawer-a" href="/inspectors.html">Home Inspectors</a></li>
-            <li><a class="side-drawer-a" href="#">Realtors</a></li>
-            <li><a class="side-drawer-a" href="#">Homeowners</a></li>
+            <li><a class="side-drawer-a" href="/realtors.html">Realtors</a></li>
+            <li><a class="side-drawer-a" href="/homeowners.html">Homeowners</a></li>
             <li><a class="side-drawer-a" href="#">Appliance Repair Technicians</a></li>
             <li><a class="side-drawer-a" href="#">Authorized Dealers</a></li>
             <li><a class="side-drawer-a" href="#">Contact Us</a></li>
@@ -60,7 +65,7 @@
           <div class="hero__left-content-container">
             <h1 class="hero__heading">Let us <span class="green-text">check</span><br/> for you.</h1>
             <p class="hero__subheading">Use our RecallChek <span class="green-text bold">algorithm.</span><br />Save <span class="green-text bold">time.</span><br/>Save <span class="green-text bold">money.</span></p>
-            <button class="hero-cta"><a href="#">Apply Now!</a></button>
+            <button class="hero-cta"><a href="#">Sign up!</a></button>
           </div>
         </div>
         <div class="hero__right">
@@ -74,13 +79,13 @@
     <div class="hero__background"></div>
 
     <section class="process">
-      <h2 class="process__heading">How our process <span class="green-text">works.</span></h2>
+      <h2 class="process__heading">How our process <span class="green-text">works</span></h2>
       <div class="process__grid">
         <div class="process__card">
           <img class="process__image" src="/images/process1.jpg" alt="Oven and dishwasher"/>
           <p class="process__step">Step 1</p>
           <h3 class="process__card-heading">Submit appliance <span class="green-text">data</span></h3>
-          <p class="process__card-text">Take your pick: Submit via our mobile app, website, inspection software, fax or email.</p>
+          <p class="process__card-text">Take your pick: submit via our mobile app, website, inspection software, fax or email.</p>
         </div>
         <div class="process__card">
           <img class="process__image" src="/images/process2.jpg" alt="Oven and dishwasher"/>
@@ -146,7 +151,7 @@
           The problem in the law is that most often it's up to the consumer, to find out whether appliances are potential fire or safety hazards!<br/><br/>
           There is a database designed and managed by the government, but you would have to wade through 195 MILLION recalled items to find out if a dishwasher or air conditioner is a hazard to your clients family.
         </p>
-        <button class="story-cta"><a href="#">Get RecallChek Now!</a></button>
+        <a href="#"><button class="story-cta">Get RecallChek Now!</button></a>
       </div>
     </section>
 
@@ -159,27 +164,28 @@
             <p class="phone">1-888-854-0798</p>
             <p class="hours">8am - 5:30pm EST Monday - Friday.</p>
           </div>
-          <div class="column-about">
-            <h6 class="footer-heading">About</h6>
-            <ul class="footer-ul">
-              <li><a class="footer-a" href="/">Home</a></li>
-              <li><a class="footer-a" href="#">Overview</a></li>
-              <li><a class="footer-a" href="#">Blog</a></li>
-              <li><a class="footer-a" href="#">Jobs</a></li>
-              <li><a class="footer-a" href="#">Affiliates</a></li>
-            </ul>
+          <div class="column-links">
+            <div class="column-about">
+              <h6 class="footer-heading">About</h6>
+              <ul class="footer-ul">
+                <li><a class="footer-a" href="/">Home</a></li>
+                <li><a class="footer-a" href="#">Overview</a></li>
+                <li><a class="footer-a" href="#">Blog</a></li>
+                <li><a class="footer-a" href="#">Jobs</a></li>
+                <li><a class="footer-a" href="#">Affiliates</a></li>
+              </ul>
+            </div>
+            <div class="column-quick-links">
+              <h6 class="footer-heading">Quick Links</h6>
+              <ul class="footer-ul">
+                <li><a class="footer-a" href="/inspectors.html">I'm a Home Inspector</a></li>
+                <li><a class="footer-a" href="#">I'm a Real Estate Agent</a></li>
+                <li><a class="footer-a" href="#">I'm a Homeowner</a></li>
+                <li><a class="footer-a" href="#">I'm an Appliance Repair Technician</a></li>
+                <li><a class="footer-a" href="#">I'm interested in becoming a seller</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="column-quick-links">
-            <h6 class="footer-heading">Quick Links</h6>
-            <ul class="footer-ul">
-              <li><a class="footer-a" href="/inspectors.html">I'm a Home Inspector</a></li>
-              <li><a class="footer-a" href="#">I'm a Real Estate Agent</a></li>
-              <li><a class="footer-a" href="#">I'm a Homeowner</a></li>
-              <li><a class="footer-a" href="#">I'm an Appliance Repair Technician</a></li>
-              <li><a class="footer-a" href="#">I'm interested in becoming a seller</a></li>
-            </ul>
-          </div>
-          
         </div>
 
         <div class="bottom-row">

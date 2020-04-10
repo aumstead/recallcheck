@@ -5,6 +5,7 @@
   max-width: 1100px;
   margin: 0 auto;
   margin-top: 8rem;
+  margin-bottom: 10rem;
   padding-left: 5rem;
   padding-right: 5rem;
 }
@@ -43,44 +44,6 @@
   }
   .faq-question {
     font-size: 2rem;
-  }
-}
-/* ///////////////////////////////////////// */
-/* affiliations section */
-/* ///////////////////////////////////////// */
-.affiliations {
-  height: max-content;
-  max-width: 1100px;
-  margin: 0 auto;
-  margin-top: 12rem;
-  margin-bottom: 12rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-.affiliations-logo {
-  height: 10rem;
-  margin: 3rem;
-}
-.affiliations-flex-row {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 5rem;
-  flex-wrap: wrap;
-}
-@media only screen and (max-width: 700px) {
-  .affiliations {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-  .affiliations h2 {
-    margin-bottom: 3rem;
-  }
-  .affiliations-flex-row {
-    margin-top: 0rem;
-  }
-  .affiliations-logo {
-    margin: 2rem;
   }
 }
 

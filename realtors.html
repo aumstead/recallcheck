@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecallChek | Realtors</title>
+  <link rel="stylesheet" href="./css/realtors.css" />
+  <link rel="stylesheet" href="./css/global.css" />
+  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,700&display=swap" rel="stylesheet"></link>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+</head>
+<body>
+  <header class="header">
+      
+    <nav class="navbar">
+      <ul class="navbar__ul">
+        <li class="navbar__li"><a href="/index.html"><img class="new-logo" src="./svg/logo.svg" alt="RecallChek Logo"></a></li>
+        <li class="navbar__li"><a class="navbar__a" href="/realtors.html">Home</a></li>
+        <li class="navbar__li"><a class="navbar__a" href="/realtors-overview.html">Overview</a></li>
+        <li class="navbar__li"><a class="navbar__a" href="/realtors-faq.html">FAQ</a></li>
+        <li class="navbar__li"><a class="navbar__a" href="/realtors-find-inspector.html">Find an Inspector</a></li>
+        <li class="navbar__li"><a class="navbar__a" href="/realtors-feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <div class="actions-flex-container">
+      <a class="actions__a actions__flex-item" href="">Sign in</a>
+      <a class="actions__a actions__flex-item" href="">Contact Us</a>
+    </div>
+  
+  </header>
+
+  <div class="mobile-logo-container">
+    <img class="mobile-logo" src="/svg/logo.svg" alt="RecallChek logo">
+  </div>
+
+  <div class="mobile-wrap">
+    <input type="checkbox" class="toggler"/>
+    <div class="hamburger"><div></div></div>
+    <div class="side-drawer">
+      <div class="side-drawer-content">
+        <img class="side-drawer-logo" src="/svg/logo.svg" alt="Recall Chek logo"/>
+        <div>
+          <button class="side-drawer-login"><a href="#">Login</a></button>
+        </div>
+        <ul class="side-drawer-ul">
+          <li><a class="side-drawer-a" href="/realtors.html">Home Realtors</a></li>
+          <li><a class="side-drawer-a" href="/realtors-overview.html">Overview</a></li>
+          <li><a class="side-drawer-a" href="/realtors-faq.html">FAQ</a></li>
+          <li><a class="side-drawer-a" href="/realtors-find-inspector.html">Find an Inspector</a></li>
+          <li><a class="side-drawer-a" href="/realtors-feedback.html">Feedback</a></li>
+          <li><a class="side-drawer-a" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero__grid">
+      <div class="hero__left">
+        <div class="hero__left-content-container">
+          <h1 class="hero__heading">Let us <span class="green-text">check</span><br/> for you.</h1>
+          <p class="hero__subheading">Use our RecallChek <span class="green-text bold">algorithm.</span><br />Save <span class="green-text bold">time.</span><br/>Save <span class="green-text bold">money.</span></p>
+          <div class="btn-row">
+            <a href="/realtors-find-inspector.html"><button class="hero-cta">Find an Inspector!</button></a>
+            <a href="/realtors-freeinfo.html"><button class="hero-cta-green">Free Recall Info!</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="hero__right-content-container">
+          <img class="hero-checkmark" src="/svg/check.svg" alt="checkmark" fill="var(--color-primary)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hero__background"></div>
+
+
+  <section class="realtors-video">
+    <h2 class="realtors-video-heading">Find out more about how we work for <span class="green-text">Realtors!</span></h2>
+    <iframe src="//iplayerhd.com/player/video/947d63c9-103b-47e4-84c8-20e0f0f3868d" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen width="450" height="253"></iframe>
+    <div class="inspector-cta">
+      <a href="/realtors-overview.html"><button class="realtors-video__cta">View details</button></a>
+    </div>
+  </section>
+
+  <section class="actions">
+    <h2 class="h2-heading actions__heading">Explore ways to get Recall<span class="green-text">Chek</span></h2>
+    <div class="actions__flex-container">
+      
+      <div class="actions__find-inspector">
+        <p class="actions__text">Find a RecallChek inspector in your area.</p>
+        <a class="actions__button" href="/realtors-find-inspector.html">Find an inspector</a>
+      </div>
+      <div class="actions__info">
+        <p class="actions__text">Get your client a free RecallChek report on their next home inspection!</p>
+        <a class="actions__button" href="/realtors-freeinfo.html">Free Info</a>
+      </div>
+
+      <div class="actions__feedback">
+        <p class="actions__text">Tell us what you think about RecallChek!</p>
+        <a class="actions__button" href="/realtors-feedback.html">Send us feedback</a>
+      </div>
+      <div class="actions__suggest-inspector">
+        <p class="actions__text">Do you know an inspector who needs to be offering RecallChek to your clients?</p>
+        <a class="actions__button" href="/realtors-suggest.html">Suggest an inspector</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="affiliations">
+    <h2 class="h2-heading text-center"><span class="green-text">Affiliates</span></h2>
+    <div class="affiliations-flex-row">
+      <a href="https://www.nachi.org/" target="_blank">
+        <img class="affiliations-logo" src="/images/realtor-affiliates/internachi-logo.png" alt="InterNACHI logo"/>
+      </a>
+      <a href="https://www.homeinspector.org/" target="_blank">
+        <img class="affiliations-logo" src="/images/realtor-affiliates/ASHIGold.png" alt="Ashi logo"/>
+      </a>
+      <a href="https://www.ethicalinspectors.com/" target="_blank">
+        <img class="affiliations-logo" src="/images/realtor-affiliates/2010.png" alt="ethical inspectors logo"/>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content-container">
+
+      <div class="footer-flex-container">
+        <div class="column-contact">
+          <h6 class="footer-heading">Give us a call:</h6>
+          <p class="phone">1-888-854-0798</p>
+          <p class="hours">8am - 5:30pm EST Monday - Friday.</p>
+        </div>
+        <div class="column-links">
+          <div class="column-about">
+            <h6 class="footer-heading">About</h6>
+            <ul class="footer-ul">
+              <li><a class="footer-a" href="/">Home</a></li>
+              <li><a class="footer-a" href="/inspectors-overview.html">Overview</a></li>
+              <li><a class="footer-a" href="#">Blog</a></li>
+              <li><a class="footer-a" href="#">Jobs</a></li>
+              <li><a class="footer-a" href="#">Affiliates</a></li>
+            </ul>
+          </div>
+          <div class="column-quick-links">
+            <h6 class="footer-heading">Quick Links</h6>
+            <ul class="footer-ul">
+              <li><a class="footer-a" href="/inspectors.html">I'm a Home Inspector</a></li>
+              <li><a class="footer-a" href="#">I'm a Real Estate Agent</a></li>
+              <li><a class="footer-a" href="#">I'm a Homeowner</a></li>
+              <li><a class="footer-a" href="#">I'm an Appliance Repair Technician</a></li>
+              <li><a class="footer-a" href="#">I'm interested in becoming a seller</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="bottom-row">
+        <hr class="footer-hr"/>
+        <div class="bottom-row-flex">
+          <div class="copyright">
+            &copy;2020 Inspector Services Group. All Rights Reserved.
+          </div>
+          <div class="legal-links">
+            <a href="#" class="footer-a">Privacy and Security</a>
+            <a href="#" class="footer-a">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

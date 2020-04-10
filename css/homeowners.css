@@ -1,0 +1,269 @@
+.hero {
+  display: grid;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: calc(100vh - 7rem);
+}
+.hero__background {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-blend-mode: luminosity;
+  background-position: bottom;
+  opacity: 0.1;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero__grid {
+  grid-row: 1;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30% 1fr;
+}
+.hero__left {
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  justify-content: center;
+}
+.hero__right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.hero__left-content-container {
+  max-width: max-content;
+}
+.hero__heading {
+  font-size: 7rem;
+}
+.hero__subheading {
+  font-size: 3rem;
+}
+.hero-cta {
+  background-color: var(--color-secondary);
+  /* background-color: transparent; */
+  width: 16rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+  border: 2px solid var(--color-secondary);
+  margin-top: 2rem;
+  transition: color 0.2s;
+  margin-right: 2rem;
+}
+.hero-cta:hover {
+  cursor: pointer;
+  /* color: var(--color-secondary); */
+  background-color: transparent
+  /* background-color: var(--color-secondary); */
+}
+.hero-cta a {
+  color: var(--color-background);
+  transition: color 0.2s;
+}
+.hero-cta:hover a {
+  color: var(--color-secondary);
+}
+.hero-cta-green {
+  background-color: var(--color-primary);
+  width: 15rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  border: 2px solid var(--color-primary);
+  color: var(--color-background);
+  transition: all 0.2s;
+}
+.hero-cta-green:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-primary)
+}
+.hero-cta-green:focus {
+  outline: none;
+}
+.hero__right-content-container {
+  width: max-content;
+  margin: 0 auto;
+}
+.hero-checkmark {
+  height: 40rem;
+  width: 40rem;
+}
+@media only screen and (max-width: 1000px) {
+  .hero__grid {
+    grid-template-rows: 30% 1fr;
+  }
+  .hero-checkmark {
+    height: 35rem;
+    width: 35rem;
+  }
+}
+@media (orientation: portrait) {
+  .hero {
+    max-height: 700px;
+  }
+  .hero__background {
+    max-height: 700px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .hero__grid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .hero__left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .hero__right {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .hero__left-content-container {
+    margin-top: 12rem;
+    max-width: 90vw;
+  }
+
+  .hero__heading {
+    font-size: 5rem;
+}
+}
+@media only screen and (max-width: 350px) {
+    .hero-checkmark {
+        height: 20rem;
+        width: 20rem;
+    }
+    .hero__heading {
+        font-size: 5rem;
+    }
+
+  }
+/* ///////////////////////////////////////// */
+/* steps section */
+/* ///////////////////////////////////////// */
+.steps {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 15rem;
+  margin-bottom: 12rem;
+}
+.steps__heading {
+  text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 3rem;
+}
+.steps__flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+.steps__step {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 20rem;
+  height: 20rem;
+}
+.steps__svg {
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.steps__send-svg {
+  height: 8rem;
+  width: 8rem;
+}
+.steps__pay-svg {
+  margin-top: 1rem;
+}
+.steps__update-svg {
+  height: 6rem;
+  width: 6rem;
+  margin-top: 1rem;
+}
+.steps__text {
+  font-size: 1.8rem;
+}
+.steps__btn {
+  padding: 1rem 2.5rem;
+  font-size: 2rem;
+  transition: all 0.2s;
+  width: max-content;
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  margin-top: 2rem;
+}
+.steps__btn:hover {
+  background-color: transparent;
+  color: var(--color-primary);
+}
+@media only screen and (max-width: 700px) {
+  .steps__flex-container {
+    /* flex-direction: column; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .steps__step {
+    margin-right: 1rem;
+    width: 18rem;
+  }
+}
+/* ///////////////////////////////////////// */
+/* benefits section */
+/* ///////////////////////////////////////// */
+.benefits {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+.benefits__sub-heading {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.benefits__flex-container {
+  display: flex;
+}
+.benefits__left {
+  width: 50%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.benefits__right {
+  width: 50%;
+}
+.benefits__ul {
+  font-size: 1.8rem;
+}
+.benefits__image {
+  width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  .benefits__flex-container {
+    flex-direction: column-reverse;
+  }
+  .benefits__left {
+    width: 100%;
+  }
+  .benefits__right {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .benefits__ul {
+    list-style-position: inside;
+  }
+}
